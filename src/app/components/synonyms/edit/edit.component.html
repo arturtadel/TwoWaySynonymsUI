@@ -1,0 +1,11 @@
+<form (ngSubmit)="onSubmit()">
+  <div>
+    <Label>Term:</Label>
+    <input type="text" [(ngModel)]="synonym.term" name="term">
+  </div>
+  <div>
+    <label>Synonyms:</label>
+    <input type="text"[(ngModel)]="synonym.synonyms" name="synonyms">
+  </div>
+  <button type="submit">Save</button>
+</form>

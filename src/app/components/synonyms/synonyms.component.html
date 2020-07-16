@@ -1,0 +1,20 @@
+<h5>Synonyms</h5>
+
+<div>
+  <button (click)="addNew()">Add New</button>
+  <table>
+    <tbody>
+    <tr *ngFor="let item of currentSynonyms | async" (click)="synonymDetails()">
+      <td>
+        <span class="">{{item.term}}</span>
+        <div>
+          <div>{{item.synonyms}}</div>
+        </div>
+      </td>
+      <td>
+        <button (click)="delete(item.id)">Remove</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
